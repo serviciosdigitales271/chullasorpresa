@@ -14,14 +14,13 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans pt-32 md:pt-40">
 
-  <!-- CABECERA ESTÁTICA/FIJA Y EL DOBLE DE ANCHA -->
+  <!-- CABECERA ESTÁTICA/FIJA -->
   <nav class="bg-white/98 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b-2 border-rose-100 shadow-md transition-all">
     <div class="max-w-6xl mx-auto px-4 py-5 md:py-6 flex justify-between items-center">
       
-      <!-- LOGOTIPO AMPLIADO CON AUTODETECCIÓN DE IMAGEN -->
+      <!-- LOGOTIPO -->
       <a href="#" class="flex items-center gap-3 group">
-        <img src="logo-chulla-regalo.jpeg" alt="Chulla Sorpresa Logo" class="h-24 md:h-28 w-auto object-contain transition transform group-hover:scale-105" 
-             onError="if (this.src.endsWith('.jpeg')) { this.src='logo-chulla-regalo.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='logo-chulla-regalo.png'; } else if (this.src.endsWith('.png')) { this.src='logo-chulla-regalo.JPG'; }">
+        <img src="logo-chulla-regalo.jpeg" data-fallback="logo-chulla-regalo" alt="Chulla Sorpresa Logo" class="h-24 md:h-28 w-auto object-contain transition transform group-hover:scale-105 img-auto-fallback">
       </a>
 
       <!-- MENÚ DE NAVEGACIÓN -->
@@ -31,14 +30,14 @@
         <a href="#cobertura" class="hover:text-rose-500 transition">Envíos</a>
       </div>
 
-      <!-- BOTÓN WHATSAPP DE ATENCIÓN DIRECTA -->
+      <!-- BOTÓN WHATSAPP -->
       <a href="https://wa.me/593967287360?text=Hola%20Chulla%20Sorpresa,%20quisiera%20pedir%20información%20sobre%20sus%20arreglos" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-black px-6 py-3 rounded-full text-base flex items-center gap-2 shadow-md transition transform hover:scale-105">
         <i class="fa-brands fa-whatsapp text-xl"></i> <span class="hidden sm:inline">Pedir por WhatsApp</span>
       </a>
     </div>
   </nav>
 
-  <!-- HERO SECTION CON IMPACTO VISUAL -->
+  <!-- HERO SECTION -->
   <header class="relative bg-gradient-to-b from-rose-50 via-white to-teal-50/30 py-12 md:py-16 border-b border-rose-100">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
       <div class="space-y-6 text-center md:text-left">
@@ -60,12 +59,10 @@
           </a>
         </div>
       </div>
-      <!-- Vista previa destacados con detección de formato -->
+      <!-- Vista previa destacados -->
       <div class="grid grid-cols-2 gap-4">
-        <img src="1.jpeg" alt="Ramo Gigante de Rosas Rojas" class="rounded-2xl shadow-md h-56 md:h-72 w-full object-cover transform hover:scale-105 transition duration-300"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='1.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='1.png'; } else if (this.src.endsWith('.png')) { this.src='1.JPG'; }">
-        <img src="2.jpeg" alt="Ramo de Flores con Luces LED" class="rounded-2xl shadow-md h-56 md:h-72 w-full object-cover transform hover:scale-105 transition duration-300 mt-6"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='2.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='2.png'; } else if (this.src.endsWith('.png')) { this.src='2.JPG'; }">
+        <img src="1.jpeg" data-fallback="1" alt="Ramo Gigante de Rosas Rojas" class="rounded-2xl shadow-md h-56 md:h-72 w-full object-cover transform hover:scale-105 transition duration-300 img-auto-fallback">
+        <img src="2.jpeg" data-fallback="2" alt="Ramo de Flores con Luces LED" class="rounded-2xl shadow-md h-56 md:h-72 w-full object-cover transform hover:scale-105 transition duration-300 mt-6 img-auto-fallback">
       </div>
     </div>
   </header>
@@ -82,8 +79,7 @@
       <!-- Producto 1 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
         <div class="relative">
-          <img src="1.jpeg" alt="Ramo Pasión de Rosas Rojas" class="w-full h-80 object-cover"
-               onError="if (this.src.endsWith('.jpeg')) { this.src='1.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='1.png'; } else if (this.src.endsWith('.png')) { this.src='1.JPG'; }">
+          <img src="1.jpeg" data-fallback="1" alt="Ramo Pasión de Rosas Rojas" class="w-full h-80 object-cover img-auto-fallback">
           <span class="absolute top-3 left-3 bg-rose-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Destacado</span>
         </div>
         <div class="p-5 space-y-3">
@@ -104,8 +100,7 @@
       <!-- Producto 2 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
         <div class="relative">
-          <img src="2.jpeg" alt="Ramo Luminoso Rosas y Astromelias" class="w-full h-80 object-cover"
-               onError="if (this.src.endsWith('.jpeg')) { this.src='2.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='2.png'; } else if (this.src.endsWith('.png')) { this.src='2.JPG'; }">
+          <img src="2.jpeg" data-fallback="2" alt="Ramo Luminoso Rosas y Astromelias" class="w-full h-80 object-cover img-auto-fallback">
           <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Con Luces LED</span>
         </div>
         <div class="p-5 space-y-3">
@@ -125,8 +120,7 @@
 
       <!-- Producto 3 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
-        <img src="3.jpeg" alt="Box Reina de Rosas con Corona" class="w-full h-80 object-cover"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='3.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='3.png'; } else if (this.src.endsWith('.png')) { this.src='3.JPG'; }">
+        <img src="3.jpeg" data-fallback="3" alt="Box Reina de Rosas con Corona" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Box Reina de Rosas & Corona</h3>
           <p class="text-sm text-slate-500">Hermoso bolso/box con rosas rojas eternas, lazo rojo brillante y una deslumbrante tiara de corona.</p>
@@ -144,8 +138,7 @@
 
       <!-- Producto 4 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
-        <img src="4.jpeg" alt="Copa Elegance Rosa y Ferrero" class="w-full h-80 object-cover"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='4.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='4.png'; } else if (this.src.endsWith('.png')) { this.src='4.JPG'; }">
+        <img src="4.jpeg" data-fallback="4" alt="Copa Elegance Rosa y Ferrero" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Copa Elegance Rosa & Ferrero</h3>
           <p class="text-sm text-slate-500">Copa de cristal decorada con rosas en tono pastel y bombones Ferrero Rocher en su interior.</p>
@@ -163,8 +156,7 @@
 
       <!-- Producto 5 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
-        <img src="5.jpeg" alt="Ramo Imperial Blanco y Morado" class="w-full h-80 object-cover"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='5.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='5.png'; } else if (this.src.endsWith('.png')) { this.src='5.JPG'; }">
+        <img src="5.jpeg" data-fallback="5" alt="Ramo Imperial Blanco y Morado" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Ramo Imperial Blanco & Morado</h3>
           <p class="text-sm text-slate-500">Diseño circular exclusivo compuesto por rosas blancas en el borde y rosas matizadas moradas al centro.</p>
@@ -182,8 +174,7 @@
 
       <!-- Producto 6 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
-        <img src="6.jpeg" alt="Arreglo Girasoles y Peluche Vaquita" class="w-full h-80 object-cover"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='6.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='6.png'; } else if (this.src.endsWith('.png')) { this.src='6.JPG'; }">
+        <img src="6.jpeg" data-fallback="6" alt="Arreglo Girasoles y Peluche Vaquita" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Arreglo Girasoles & Peluche Vaquita</h3>
           <p class="text-sm text-slate-500">Cesta silvestre con girasoles frescos, rosas blancas, tierno peluche de vaquita y globo de corazón.</p>
@@ -201,8 +192,7 @@
 
       <!-- Producto 7 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
-        <img src="7.jpeg" alt="Box Eres Especial Oso y Ferrero" class="w-full h-80 object-cover"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='7.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='7.png'; } else if (this.src.endsWith('.png')) { this.src='7.JPG'; }">
+        <img src="7.jpeg" data-fallback="7" alt="Box Eres Especial Oso y Ferrero" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Box "Eres Especial" Oso & Ferrero</h3>
           <p class="text-sm text-slate-500">Adorable oso de peluche, chocolates Ferrero Rocher y rosas en caja base metálica.</p>
@@ -220,8 +210,7 @@
 
       <!-- Producto 8 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
-        <img src="8.jpeg" alt="Taza Mafalda con Globo Dorado" class="w-full h-80 object-cover"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='8.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='8.png'; } else if (this.src.endsWith('.png')) { this.src='8.JPG'; }">
+        <img src="8.jpeg" data-fallback="8" alt="Taza Mafalda con Globo Dorado" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Taza Mafalda & Globo Dorado "Te Amo"</h3>
           <p class="text-sm text-slate-500">Taza decorada de Mafalda con mini oso de peluche y elegante globo burbuja transparente/dorado.</p>
@@ -239,8 +228,7 @@
 
       <!-- Producto 9 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
-        <img src="9.jpeg" alt="Box Winnie Pooh y Cuadro Recuerdo" class="w-full h-80 object-cover" 
-             onError="if (this.src.endsWith('.jpeg')) { this.src='9.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='9.png'; } else if (this.src.endsWith('.png')) { this.src='9.JPG'; }">
+        <img src="9.jpeg" data-fallback="9" alt="Box Winnie Pooh y Cuadro Recuerdo" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Box Winnie Pooh & Cuadro Recuerdo</h3>
           <p class="text-sm text-slate-500">Caja de golosinas con marco para fotos personalizables, peluche de jirafa y Topper de Winnie Pooh.</p>
@@ -258,8 +246,7 @@
 
       <!-- Producto 10 -->
       <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition sm:col-span-2 lg:col-span-1">
-        <img src="10.jpeg" alt="Taza Dulce Amor y Globo Azul" class="w-full h-80 object-cover" 
-             onError="if (this.src.endsWith('.jpeg')) { this.src='10.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='10.png'; } else if (this.src.endsWith('.png')) { this.src='10.JPG'; }">
+        <img src="10.jpeg" data-fallback="10" alt="Taza Dulce Amor y Globo Azul" class="w-full h-80 object-cover img-auto-fallback">
         <div class="p-5 space-y-3">
           <h3 class="font-bold text-xl text-slate-800">Taza Dulce Amor & Globo Azul</h3>
           <p class="text-sm text-slate-500">Taza rellena de chocolates variados (KitKat, Rocklets) y globo de corazón metalizado en tono azul.</p>
@@ -302,12 +289,11 @@
     </div>
   </section>
 
-  <!-- PIE DE PÁGINA CON BRANDING OFICIAL -->
+  <!-- PIE DE PÁGINA -->
   <footer id="cobertura" class="bg-slate-900 text-slate-300 py-12">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
       <div class="space-y-3">
-        <img src="logo-chulla-regalo.jpeg" alt="Chulla Sorpresa" class="h-20 w-auto object-contain bg-white/10 p-1 rounded-lg"
-             onError="if (this.src.endsWith('.jpeg')) { this.src='logo-chulla-regalo.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='logo-chulla-regalo.png'; } else if (this.src.endsWith('.png')) { this.src='logo-chulla-regalo.JPG'; }">
+        <img src="logo-chulla-regalo.jpeg" data-fallback="logo-chulla-regalo" alt="Chulla Sorpresa" class="h-20 w-auto object-contain bg-white/10 p-1 rounded-lg img-auto-fallback">
         <p class="text-sm text-slate-400">Arreglos florales únicos y detalles inolvidables hechos con amor para sorprender en cualquier ocasión.</p>
       </div>
       <div>
@@ -326,6 +312,26 @@
       © 2026 Chulla Sorpresa - Detalles que encantan. Todos los derechos reservados.
     </div>
   </footer>
+
+  <!-- SCRIPT LIMPIO DE GESTIÓN DE IMÁGENES -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll('.img-auto-fallback');
+      const extensions = ['.jpeg', '.jpg', '.png', '.JPG', '.PNG'];
+
+      images.forEach(img => {
+        let attempts = 0;
+        const baseName = img.getAttribute('data-fallback');
+
+        img.addEventListener('error', function() {
+          if (attempts < extensions.length) {
+            img.src = baseName + extensions[attempts];
+            attempts++;
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
