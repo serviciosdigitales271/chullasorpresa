@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chulla Sorpresa | Detalles que encantan</title>
+  <!-- Tailwind CSS por CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pt-32 md:pt-40">
+
+  <!-- CABECERA ESTÁTICA/FIJA Y EL DOBLE DE ANCHA -->
+  <nav class="bg-white/98 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b-2 border-rose-100 shadow-md transition-all">
+    <div class="max-w-6xl mx-auto px-4 py-5 md:py-6 flex justify-between items-center">
+      
+      <!-- LOGOTIPO AMPLIADO -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="logo-chulla-regalo.jpeg" alt="Chulla Sorpresa Logo" class="h-24 md:h-28 w-auto object-contain transition transform group-hover:scale-105" onError="this.onerror=null; this.src='logo-chulla-regalo.jpg';">
+      </a>
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <div class="hidden md:flex gap-8 font-bold text-slate-700 text-base">
+        <a href="#catalogo" class="hover:text-rose-500 transition">Catálogo</a>
+        <a href="#servicio" class="hover:text-rose-500 transition">¿Cómo pedir?</a>
+        <a href="#cobertura" class="hover:text-rose-500 transition">Envíos</a>
+      </div>
+
+      <!-- BOTÓN WHATSAPP -->
+      <a href="https://wa.me/593967287360?text=Hola%20Chulla%20Sorpresa,%20quisiera%20pedir%20información%20sobre%20sus%20arreglos" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-black px-6 py-3 rounded-full text-base flex items-center gap-2 shadow-md transition transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-xl"></i> <span class="hidden sm:inline">Pedir por WhatsApp</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION CON IMPACTO VISUAL -->
+  <header class="relative bg-gradient-to-b from-rose-50 via-white to-teal-50/30 py-12 md:py-16 border-b border-rose-100">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6 text-center md:text-left">
+        <span class="inline-block bg-teal-100 text-teal-800 text-xs font-extrabold px-3.5 py-1 rounded-full uppercase tracking-wider">
+          Detalles que encantan
+        </span>
+        <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+          Sorprende a quien más quieres con <span class="text-rose-600">Chulla Sorpresa</span>
+        </h1>
+        <p class="text-base md:text-lg text-slate-600">
+          Encuentra ramos de rosas gigantes, arreglos con luces LED, tazas mágicas y regalos personalizados para celebrar momentos únicos.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#catalogo" class="bg-rose-500 hover:bg-rose-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-rose-200 transition text-center">
+            Ver Catálogo Completo
+          </a>
+          <a href="https://wa.me/593967287360?text=Hola,%20deseo%20asesoría%20para%20armar%20un%20regalo%20personalizado" target="_blank" class="bg-white border border-slate-200 hover:border-slate-300 text-slate-700 font-bold px-6 py-3.5 rounded-xl transition text-center flex items-center justify-center gap-2 shadow-sm">
+            <i class="fa-brands fa-whatsapp text-emerald-500 text-lg"></i> Asesoría Personalizada
+          </a>
+        </div>
+      </div>
+      <!-- Vista previa destacados -->
+      <div class="grid grid-cols-2 gap-4">
+        <img src="1.jpeg" alt="Ramo Gigante de Rosas Rojas" class="rounded-2xl shadow-md h-56 md:h-72 w-full object-cover transform hover:scale-105 transition duration-300">
+        <img src="2.jpeg" alt="Ramo de Flores con Luces LED" class="rounded-2xl shadow-md h-56 md:h-72 w-full object-cover transform hover:scale-105 transition duration-300 mt-6">
+      </div>
+    </div>
+  </header>
+
+  <!-- CATÁLOGO DE PRODUCTOS -->
+  <section id="catalogo" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-3xl font-black text-slate-900">Catálogo de Arreglos y Regalos</h2>
+      <p class="text-slate-600 mt-2">Detalles pensados para aniversarios, cumpleaños y momentos inolvidables.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Producto 1 (1.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <div class="relative">
+          <img src="1.jpeg" alt="Ramo Pasión de Rosas Rojas" class="w-full h-80 object-cover">
+          <span class="absolute top-3 left-3 bg-rose-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Destacado</span>
+        </div>
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Ramo Pasión de Rosas Rojas</h3>
+          <p class="text-sm text-slate-500">Espectacular ramo con abundantes rosas rojas seleccionadas y velo de novia en empaque blanco elegante.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$40.00</span>
+              <span class="text-2xl font-black text-rose-600">$35.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20el%20Ramo%20Pasión%20de%20Rosas%20Rojas" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 (2.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <div class="relative">
+          <img src="2.jpeg" alt="Ramo Luminoso Rosas y Astromelias" class="w-full h-80 object-cover">
+          <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Con Luces LED</span>
+        </div>
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Ramo Luminoso Rosas & Astromelias</h3>
+          <p class="text-sm text-slate-500">Elegante ramo en tonos rosa y amarillo rodeado de una cálida guirnalda de luces LED.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$35.00</span>
+              <span class="text-2xl font-black text-rose-600">$30.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20el%20Ramo%20Luminoso%20Rosas%20y%20Astromelias" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 (3.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <img src="3.jpeg" alt="Box Reina de Rosas con Corona" class="w-full h-80 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Box Reina de Rosas & Corona</h3>
+          <p class="text-sm text-slate-500">Hermoso bolso/box con rosas rojas eternas, lazo rojo brillante y una deslumbrante tiara de corona.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$30.00</span>
+              <span class="text-2xl font-black text-rose-600">$25.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20el%20Box%20Reina%20de%20Rosas%20y%20Corona" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 4 (4.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <img src="4.jpeg" alt="Copa Elegance Rosa y Ferrero" class="w-full h-80 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Copa Elegance Rosa & Ferrero</h3>
+          <p class="text-sm text-slate-500">Copa de cristal decorada con rosas en tono pastel y bombones Ferrero Rocher en su interior.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$22.00</span>
+              <span class="text-2xl font-black text-rose-600">$18.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20la%20Copa%20Elegance%20Rosa%20y%20Ferrero" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 5 (5.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <img src="5.jpeg" alt="Ramo Imperial Blanco y Morado" class="w-full h-80 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Ramo Imperial Blanco & Morado</h3>
+          <p class="text-sm text-slate-500">Diseño circular exclusivo compuesto por rosas blancas en el borde y rosas matizadas moradas al centro.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$38.00</span>
+              <span class="text-2xl font-black text-rose-600">$32.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20el%20Ramo%20Imperial%20Blanco%20y%20Morado" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 6 (6.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <img src="6.jpeg" alt="Arreglo Girasoles y Peluche Vaquita" class="w-full h-80 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Arreglo Girasoles & Peluche Vaquita</h3>
+          <p class="text-sm text-slate-500">Cesta silvestre con girasoles frescos, rosas blancas, tierno peluche de vaquita y globo de corazón.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$34.00</span>
+              <span class="text-2xl font-black text-rose-600">$28.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20el%20Arreglo%20Girasoles%20y%20Peluche%20Vaquita" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 7 (7.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <img src="7.jpeg" alt="Box Eres Especial Oso y Ferrero" class="w-full h-80 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Box "Eres Especial" Oso & Ferrero</h3>
+          <p class="text-sm text-slate-500">Adorable oso de peluche, chocolates Ferrero Rocher y rosas en caja base metálica.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$26.00</span>
+              <span class="text-2xl font-black text-rose-600">$22.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20el%20Box%20Eres%20Especial%20Oso%20y%20Ferrero" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 8 (8.jpeg) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <img src="8.jpeg" alt="Taza Mafalda con Globo Dorado" class="w-full h-80 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Taza Mafalda & Globo Dorado "Te Amo"</h3>
+          <p class="text-sm text-slate-500">Taza decorada de Mafalda con mini oso de peluche y elegante globo burbuja transparente/dorado.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$20.00</span>
+              <span class="text-2xl font-black text-rose-600">$16.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20la%20Taza%20Mafalda%20con%20Globo%20Dorado" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 9 (DETECCIÓN AUTOMÁTICA DE EXTENSIÓN) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+        <img src="9.jpeg" alt="Box Winnie Pooh y Cuadro Recuerdo" class="w-full h-80 object-cover" 
+             onError="if (this.src.endsWith('.jpeg')) { this.src='9.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='9.png'; } else if (this.src.endsWith('.png')) { this.src='9.JPG'; }">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Box Winnie Pooh & Cuadro Recuerdo</h3>
+          <p class="text-sm text-slate-500">Caja de golosinas con marco para fotos personalizables, peluche de jirafa y Topper de Winnie Pooh.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$28.00</span>
+              <span class="text-2xl font-black text-rose-600">$24.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20el%20Box%20Winnie%20Pooh%20y%20Cuadro" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 10 (DETECCIÓN AUTOMÁTICA DE EXTENSIÓN) -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+        <img src="10.jpeg" alt="Taza Dulce Amor y Globo Azul" class="w-full h-80 object-cover" 
+             onError="if (this.src.endsWith('.jpeg')) { this.src='10.jpg'; } else if (this.src.endsWith('.jpg')) { this.src='10.png'; } else if (this.src.endsWith('.png')) { this.src='10.JPG'; }">
+        <div class="p-5 space-y-3">
+          <h3 class="font-bold text-xl text-slate-800">Taza Dulce Amor & Globo Azul</h3>
+          <p class="text-sm text-slate-500">Taza rellena de chocolates variados (KitKat, Rocklets) y globo de corazón metalizado en tono azul.</p>
+          <div class="flex justify-between items-center pt-2">
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-slate-400 line-through">$18.00</span>
+              <span class="text-2xl font-black text-rose-600">$15.00</span>
+            </div>
+            <a href="https://wa.me/593967287360?text=Hola,%20me%20interesa%20la%20Taza%20Dulce%20Amor%20y%20Globo%20Azul" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition flex items-center gap-1.5 text-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i> Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PASOS DEL SERVICIO -->
+  <section id="servicio" class="bg-white py-16 border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-black text-center text-slate-900 mb-12">¿Cómo realizas tu pedido?</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 rounded-2xl bg-rose-50/50 space-y-3 border border-rose-100">
+          <div class="w-12 h-12 bg-rose-500 text-white text-xl font-bold rounded-2xl flex items-center justify-center mx-auto shadow-sm">1</div>
+          <h3 class="font-bold text-lg text-slate-800">Elige tu detalle</h3>
+          <p class="text-slate-600 text-sm">Selecciona tu arreglo favorito del catálogo o pídenos cambios personalizados.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-rose-50/50 space-y-3 border border-rose-100">
+          <div class="w-12 h-12 bg-rose-500 text-white text-xl font-bold rounded-2xl flex items-center justify-center mx-auto shadow-sm">2</div>
+          <h3 class="font-bold text-lg text-slate-800">Coordina por WhatsApp</h3>
+          <p class="text-slate-600 text-sm">Envíanos el mensaje para la tarjeta, la dirección de entrega y la fecha deseada.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-rose-50/50 space-y-3 border border-rose-100">
+          <div class="w-12 h-12 bg-rose-500 text-white text-xl font-bold rounded-2xl flex items-center justify-center mx-auto shadow-sm">3</div>
+          <h3 class="font-bold text-lg text-slate-800">Entrega Sorpresa</h3>
+          <p class="text-slate-600 text-sm">Llevamos el regalo a la puerta de esa persona especial y te enviamos la confirmación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA CON BRANDING OFICIAL -->
+  <footer id="cobertura" class="bg-slate-900 text-slate-300 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div class="space-y-3">
+        <img src="logo-chulla-regalo.jpeg" alt="Chulla Sorpresa" class="h-20 w-auto object-contain bg-white/10 p-1 rounded-lg">
+        <p class="text-sm text-slate-400">Arreglos florales únicos y detalles inolvidables hechos con amor para sorprender en cualquier ocasión.</p>
+      </div>
+      <div>
+        <h4 class="text-white text-lg font-bold mb-4">Horarios de Atención</h4>
+        <p class="text-sm text-slate-400">Lunes a Sábado: 8:00 AM - 7:00 PM</p>
+        <p class="text-sm text-slate-400">Domingos y Fechas Especiales: Entregas programadas con anticipación</p>
+      </div>
+      <div>
+        <h4 class="text-white text-lg font-bold mb-4">Atención Inmediata</h4>
+        <a href="https://wa.me/593967287360" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 text-sm font-bold bg-emerald-950/50 border border-emerald-800/50 px-4 py-2.5 rounded-xl transition">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Chatear por WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="text-center text-xs text-slate-500 border-t border-slate-800 mt-10 pt-6">
+      © 2026 Chulla Sorpresa - Detalles que encantan. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
